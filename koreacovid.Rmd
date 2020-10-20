@@ -40,6 +40,7 @@ with(kRdata, table(Sex, result))
 
 ```{r}
 barchartGC(~result + Sex,data=kRdata, main ="Frequency Bar Chart")
+
 ```
 
   
@@ -47,7 +48,10 @@ barchartGC(~result + Sex,data=kRdata, main ="Frequency Bar Chart")
 
 
 
+```{r}
+barchartGC(~result + Sex,data=kRdata,type ="percent", main ="Frequency Bar Chart")
 
+```
 
   
 ## Numerical results
