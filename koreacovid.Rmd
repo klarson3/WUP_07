@@ -40,10 +40,9 @@ with(kRdata, table(Sex, result))
 
 ```{r}
 barchartGC(~result + Sex,data=kRdata, main ="Frequency Bar Chart")
+``` 
 
-```
-
-  
+According to the frequency graph above, in proportion to the amount of men and women dying, men seem to be dying more frequently than women.  
 ### this bar chart is displaying in total frequency terms our data.  Clearly there are a lot less dead people than alive people as is reflected by the sizes of the bars in the display.  
 
 
@@ -53,6 +52,7 @@ barchartGC(~result + Sex,data=kRdata,type ="percent", main ="Frequency Bar Chart
 
 ```
 
+According to the percent bar chart above, more men are dying than women. It isn't that understandable that men should be dying more often than women, because women aren't considered to be as strong and healthy as men. The graph shows 62-65 % of men are dying vs 35-38% of women.
   
 ## Numerical results
 ```{r}
@@ -61,10 +61,15 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
+The percentage of men vs women alive is 56/44 and the number of dead is 36/64. It is very unusual that men would die more frequently than women, especially from a virus such as Korea Covid. 
 ## Inferential results 
-
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
 
 
 
 ## Conclusions
-
+All of that being said, the odds of men dying versus women dying are 2.3 times more frequent. 
