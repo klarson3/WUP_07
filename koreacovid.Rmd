@@ -42,7 +42,9 @@ with(kRdata, table(Sex, result))
 barchartGC(~result + Sex,data=kRdata, main ="Frequency Bar Chart")
 ``` 
 
-According to the frequency graph above, in proportion to the amount of men and women dying, men seem to be dying more frequently than women.  
+According to the frequency graph above, in proportion to the amount of men and women dying, men seem to be dying more frequently than women. 
+
+
 ### this bar chart is displaying in total frequency terms our data.  Clearly there are a lot less dead people than alive people as is reflected by the sizes of the bars in the display.  
 
 
